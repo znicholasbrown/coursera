@@ -22,7 +22,7 @@
     
     needHandler.bought = (index) => shoppingListService.moveToHaveList(index);
     
-    needHandler.remove = () => shoppingListService.removeFromNeedList();
+    needHandler.remove = (index) => shoppingListService.removeFromNeedList(index);
   };
   needView.$inject = ['shoppingListService'];
   
