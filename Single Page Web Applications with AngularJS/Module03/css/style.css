@@ -1,0 +1,47 @@
+body, html {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+
+}
+.searchBar {
+  width: calc(100vw - 34px);
+  margin-top: 50px;
+
+}
+.menu {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.item {
+    margin-top: 20px;
+}
+.short {
+  font-weight: bold;
+}
+.name {
+  text-decoration: underline;
+
+}
+.description {
+  margin-left: 25px;
+  width: 70%;
+}
+.price {
+  float: right;
+  width: 100px;
+  margin-right: 25px;
+}
+
+.remove-button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-family: cursive;
+  outline: none;
+}
