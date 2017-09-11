@@ -1,0 +1,10 @@
+<div id="catItems">
+  <div ng-repeat="item in category.items">
+    <a ui-sref="menu.category.item({item: item.name, index: $index})">{{ item.name }}
+  </a>
+  </div>
+</div>
+<div id="item">
+  <ui-view>
+  </ui-view>
+</div>
