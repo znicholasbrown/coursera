@@ -1,0 +1,38 @@
+<div class="centered">
+Enter your contact information to subscribe to our weekly newsletter!
+
+<form name="signupForm" novalidate>
+  <div>
+    <div>First</div>
+    <input type="text" name="first" ng-model="signupCtrl.first" required/>
+    <span ng-if="signupForm.first.$error.required && signupForm.first.$touched">Field is required.</span>
+  </div>
+  <div>
+    <div>Last</div>
+    <input type="text" name="last" ng-model="signupCtrl.last" required/>
+    <span ng-if="signupForm.last.$error.required && signupForm.last.$touched">Field is required.</span>
+  </div>
+  <div>
+    <div>Email</div>
+    <input type="email" name="email" ng-model="signupCtrl.email" required/>
+    <span ng-if="signupForm.email.$error.required && signupForm.email.$touched">Email is required.</span>
+    <span ng-if="signupForm.email.$invalid && signupForm.email.$touched">Please provide a valid email.</span>
+  </div>
+  <div>
+    <div>Phone number</div>
+    <input type="text" name="phone" ng-model="signupCtrl.phone" required/>
+    <span ng-if="signupForm.phone.$error.required && signupForm.phone.$touched">Phone is required.</span>
+  </div>
+  <div>
+    <div>Menu number of your favorite dish</div>
+    <input type="text" name="dish" ng-model="signupCtrl.dish" dish-check required/>
+    <span ng-if="signupForm.dish.$pending.dish-check">Checking menu...</span>
+    <span ng-if="signupForm.dish.$error.dish-check">No such menu number exists.</span>
+  </div>
+  <div>
+
+  <input ng-disabled="signupForm.$invalid" type="submit" ng-click="signupCtrl.submit()"/></div>
+
+</form>
+<div ng-if="signupCtrl.info()">Your information has been saved</div>
+</div>

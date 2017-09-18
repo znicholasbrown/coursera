@@ -1,0 +1,19 @@
+<div ng-if="!myInfo.info" style="text-align: center">Not Signed Up Yet. <a ui-sref="signup">Sign up Now!</a></div>
+<div ng-if="myInfo.info" style="text-align: center">
+<div>
+  {{ myInfo.info.first + " " + myInfo.info.last }}
+</div>
+<div>
+  {{ myInfo.info.email }}
+</div>
+<div>
+  {{ myInfo.info.phone }}
+</div></br>
+
+Favorite dish:
+<div>
+  {{ myInfo.info.dishName }}
+
+</div>
+<img ng-src="{{ myInfo.picture }}"/>
+</div>

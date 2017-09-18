@@ -1,0 +1,26 @@
+form>div>input {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+}
+form {
+  width: 90%;
+  text-align: left;
+  margin: auto;
+}
+form>div>input[type="submit"] {
+  color: black;
+}
+form>div>span {
+  color: red;
+}
+.centered {
+  text-align: center;
+}
+.ng-touched.ng-valid {
+  border: 2px solid green;
+}
+.ng-touched.ng-invalid {
+  border: 2px solid red;
+}
